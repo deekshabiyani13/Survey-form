@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      
+      <h1 id="title">Skin Care Routine Survey</h1>
+      <p id="description">“Spill your skincare tea—because your glow story deserves to be heard!”</p>
+      <form id="survey-form"> 
+        <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"/></label><br>
+
+        <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your email"></label><br>
+        <label id="number-label">Age(years)<input id="number" type="number" min="12" max="100" required placeholder="Enter your age" /></label><br>
+        <fieldset>
+          <legend>Skin Type</legend>
+          <label for="oily"><input type="radio" name="skin-type" value="1"  id="oily"/> Oily </label><br>
+          <label  for="dry"><input type="radio" name="skin-type" value="2"  id="dry"/> Dry </label><br>
+      
+      <label  for="combination"><input type="radio" name="skin-type" value="3"  id="combination"/> Combination </label><br>
+      <label  id="sensitive"><input type="radio" name="skin-type" value="4"  id="sensitive"/> Sensitive</label><br>
+      <label  for="normal"><input type="radio"name="skin-type" value="5"  id="normal"/> normal </label><br>
+      </fieldset><br>
+      <fieldset>
+        <legend>Products You Use</legend>
+        <label  for="cleanser"><input type="checkbox"  id="cleanser" value="1"/> Cleanser</label><br>
+        <label  for="toner"><input type="checkbox" id="toner" value="2"/> Toner</label><br>
+        <label  for="moisturizer"><input type="checkbox"  id="moisturizer" value="3"/> Moisturizer</label><br>
+        <label for="sunscreen"><input type="checkbox" id="sunscreen" value="4"/> Sunscreen</label><br>
+        <label for="serum"><input type="checkbox" id="serum" value="5"/> Serum</label><br>
+        <label for="facemask"><input type="checkbox" id="facemask" value="6"/> Face Mask</label><br>
+        <label for="exfoliator"><input type="checkbox" id="exfoliator" value="7"/> Exfoliator</label><br>
+        </fieldset><br>
+        <label>How much time do you spend on skincare</label><br>
+        <select id="dropdown">
+          <option disabled selected value=""> select an option</option>
+          
+          <option value="5">under 5 mins </option>
+          <option value="10">5-10 mins</option>
+          <option value="15">10-15 mins</option>
+          <option value="20">more than 15 mins</option>
+          </select><br>
+
+        <label for="suggestions">Any product or skincare tips you'd like to share?</label>
+        <textarea id="suggestions" name="suggestions" rows="4" placeholder="your thoughts..."></textarea>
+
+        <button type="submit" id="submit"> Submit</button>
+          
+
+       
+
+      </form>
+
+
+      </body>
+  </html>
